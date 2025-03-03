@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+      .box1 {
+        padding-bottom: 20px;
+        border: 3px solid rgba(134, 130, 130, 0.548);
+        border-radius: 20px;
+
+        height: 93vh;
+        width: 290px;
+        padding: 15px;
+        box-shadow: 5px 5px 15px rgba(29, 27, 27, 0.479);
+        background: linear-gradient(
+          135deg,
+          #f8f8f8,
+          #d6dada,
+          rgba(0, 0, 0, 0.007)
+        );
+        margin: auto;
+        text-align: center;
+      }
+
+      #image {
+        width: 100%;
+        height: 53%;
+
+        object-position: top;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      .text {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .tag {
+        padding: 5px 15px;
+        border: 2px solid rgba(134, 130, 130, 0.548);
+        border-radius: 20px;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        color: #444;
+        background-color: #ddd;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.356);
+        font-weight: bold;
+        justify-content: center;
+        display: flex;
+      }
+
+      .heading {
+        font-family: "Poppins", sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: rgba(39, 34, 34, 0.781);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .poetic-line {
+        font-family: "Georgia", serif;
+        font-size: 20px;
+        font-style: italic;
+        color: #1e2222;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+        padding: 0 10px;
+      }
+      .button {
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: #4a4a4a;
+        border: 2px solid #6e7575;
+        border-radius: 15px;
+        transition: 0.3s ease;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .button:hover {
+        background: #6e7575;
+        color: #f8f8f8;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <img
+        id="image"
+        src="https://i.pinimg.com/736x/b6/41/c8/b641c87c85aff29018531a1386625aaf.jpg"
+        alt="a woman"
+      />
+      <div class="text">
+        <span class="tag">Nature</span>
+        <span class="tag">Poetry</span>
+      </div>
+      <h2 class="heading">A Ship Without Shore</h2>
+      <p class="poetic-line">
+        <em>
+          "I am lost in you - like a ship in an endless ocean - with no desire
+          to be found."
+        </em>
+      </p>
+      <input type="button" value="Read More" class="button" />
+    </div>
+  </body>
+</html>
